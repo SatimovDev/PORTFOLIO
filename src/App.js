@@ -4,6 +4,7 @@ import { Task } from "./components/Task";
 import { Navbar } from "./components/Navbar";
 import {Projects} from './Pages/Projects'
 import { AboutMe } from "./Pages/AboutMe";
+import {Calendar }from "./Pages/Calendar";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route index element={<Tasks />} />
           <Route path={'/projects'} element={<Projects/>}/>
           <Route path={'/aboutme'} element={<AboutMe/>}/>
+          <Route path={'/calendar'} element={<Calendar/>}/>
         </Routes>
       <Task/>
     </div>
